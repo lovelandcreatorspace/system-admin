@@ -1,0 +1,10 @@
+# Post-firmware load device for Impact
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="03fd", ATTR{idProduct}=="0008", MODE:="666"
+
+# Pre-firmware load devices
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="03fd", ATTR{idProduct}=="0007", RUN+="/sbin/fxload -v -t fx2 -I /etc/hotplug/usb/xusbdfwu.fw/xusbdfwu.hex /dev/%k"
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="03fd", ATTR{idProduct}=="0009", RUN+="/sbin/fxload -v -t fx2 -I /etc/hotplug/usb/xusbdfwu.fw/xusb_xup.hex /dev/%k"
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="03fd", ATTR{idProduct}=="000d", RUN+="/sbin/fxload -v -t fx2 -I /etc/hotplug/usb/xusbdfwu.fw/xusb_emb.hex /dev/%k"
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="03fd", ATTR{idProduct}=="000f", RUN+="/sbin/fxload -v -t fx2 -I /etc/hotplug/usb/xusbdfwu.fw/xusb_xlp.hex /dev/%k"
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="03fd", ATTR{idProduct}=="0013", RUN+="/sbin/fxload -v -t fx2 -I /etc/hotplug/usb/xusbdfwu.fw/xusb_xp2.hex /dev/%k"
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="03fd", ATTR{idProduct}=="0015", RUN+="/sbin/fxload -v -t fx2 -I /etc/hotplug/usb/xusbdfwu.fw/xusb_xse.hex /dev/%k"
