@@ -5,3 +5,5 @@ SUBSYSTEM=="tty", ATTRS{serial}=="74132343530351706181", SYMLINK+="ao1-3-lcs-3dp
 SUBSYSTEM=="tty", ATTRS{serial}=="A4139363831351316190", SYMLINK+="ao1-4-lcs-3dprinter"
 SUBSYSTEM=="tty", ATTRS{serial}=="A413936383135151B201", SYMLINK+="ao1-5-lcs-3dprinter"
 SUBSYSTEM=="tty", ATTRS{serial}=="64036353430351B08221", SYMLINK+="ao1-6-lcs-3dprinter"
+SUBSYSTEM=="tty", ATTRS{serial}=="A41393638313514102C0", SYMLINK+="ao1-7-lcs-3dprinter"
+SUBSYSTEM=="tty", ATTRS{serial}=="64936333137351A07160", SYMLINK+="ao1-8-lcs-3dprinter"
